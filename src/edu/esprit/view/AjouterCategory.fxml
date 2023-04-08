@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controller.AjouterCategoryController">
+    <children>
+      <Pane fx:id="BoutonValiderC" layoutX="15.0" layoutY="17.0" prefHeight="367.0" prefWidth="571.0" style="-fx-background-color: ivory; -fx-border-width: 2px; -fx-border-color: black;" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="17.0">
+         <children>
+            <Label layoutX="70.0" layoutY="83.0" prefHeight="17.0" prefWidth="80.0" text="Name :" textAlignment="CENTER" />
+            <Label layoutX="70.0" layoutY="138.0" text="Description :" />
+            <Button id="valider" fx:id="btnC" layoutX="403.0" layoutY="320.0" mnemonicParsing="false" text="Valider">
+            </Button>
+            <TextField id="nameC" fx:id="nameC" layoutX="150.0" layoutY="79.0" />
+            <TextField id="descriptionC" fx:id="descriptionC" layoutX="150.0" layoutY="134.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controller.AjouterProductController">
+   <children>
+      <Pane fx:id="BoutonValider" layoutX="29.0" layoutY="33.0" prefHeight="367.0" prefWidth="571.0" style="-fx-background-color: ivory; -fx-border-width: 2px; -fx-border-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+         <children>
+            <Label layoutX="70.0" layoutY="83.0" prefHeight="17.0" prefWidth="80.0" text="Name :" textAlignment="CENTER" />
+            <Label layoutX="70.0" layoutY="138.0" text="Description :" />
+            <Label layoutX="70.0" layoutY="184.0" prefHeight="17.0" prefWidth="80.0" text="Price :" textAlignment="CENTER" />
+            <Label layoutX="70.0" layoutY="233.0" text="stock :" />
+            <Label layoutX="70.0" layoutY="282.0" prefHeight="17.0" prefWidth="80.0" text="image :" textAlignment="CENTER" />
+            <Button id="valider" fx:id="btn" layoutX="403.0" layoutY="320.0" mnemonicParsing="false" text="Valider">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField id="name" fx:id="name" layoutX="150.0" layoutY="79.0" />
+            <TextField id="description" fx:id="description" layoutX="150.0" layoutY="134.0" />
+            <TextField id="price" fx:id="price" layoutX="150.0" layoutY="180.0" />
+            <TextField id="stock" fx:id="stock" layoutX="150.0" layoutY="229.0" />
+            <Button fx:id="addImage" layoutX="150.0" layoutY="287.0" mnemonicParsing="false" onAction="#SingleImage" text="Browse" />
+            <ImageView id="ImageView" fx:id="ImageView" fitHeight="59.0" fitWidth="61.0" layoutX="268.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true" />
+            <ComboBox fx:id="category" layoutX="149.0" layoutY="330.0" prefWidth="150.0" />
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
